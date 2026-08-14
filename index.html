@@ -2,19 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>A-Frame 3D Circle Example</title>
+    <title>A-Frame 3D Sphere Example</title>
+    <!-- FIX 1: Provide the exact path to the A-Frame framework library file -->
     <script src="https://aframe.io"></script>
   </head>
   <body>
     <a-scene>
-      <a-circle 
+      <!-- FIX 2: Swapped out your flat <a-circle> for a 3D <a-sphere> -->
+      <a-sphere 
         position="-1.5 1.5 -3" 
-        rotation="-45 0 0" 
         radius="1" 
-        color="#FF5733" 
-        side="double">
-      </a-circle>
+        color="#FF5733">
+      </a-sphere>
 
+      <!-- Your original ring element -->
       <a-ring 
         position="1.5 1.5 -3" 
         rotation="-45 0 0" 
